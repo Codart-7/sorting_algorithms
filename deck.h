@@ -1,3 +1,6 @@
+#ifndef DECK_H_
+#define DECK_H_
+
 typedef enum kind_e
 {
     SPADE = 0,
@@ -32,3 +35,10 @@ typedef struct deck_node_s
     struct deck_node_s *prev;
     struct deck_node_s *next;
 } deck_node_t;
+
+int val_cmp(const char *str1, const char *str2);
+int card_key(const card_t *card);
+void swap_nodes(deck_node_t **list, deck_node_t *l, deck_node_t *r);
+void sort_deck(deck_node_t **deck);
+
+#endif
