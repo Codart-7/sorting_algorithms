@@ -4,7 +4,7 @@ In this project, I implemented several different sorting algorithms.
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files. 
+* [tests](./tests): Folder of test files.
 
 ## Helper Files :raised_hands:
 
@@ -156,3 +156,4 @@ Function Prototype:
   * [1000-sort_deck.c](./1000-sort_deck.c): C function that sorts a `deck_node_t` doubly-linked list deck of cards.
   * Assumes that there are exactly `52` elements in the doubly-linked list.
   * Orders the deck from spades to diamonds and from aces to kings.
+  
