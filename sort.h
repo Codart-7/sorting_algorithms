@@ -57,5 +57,7 @@ void radix_counting_sort(int *array, size_t size, int sig, int *buff);
 void radix_sort(int *array, size_t size);
 
 void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
+void swap_nodes(listint_t **list, listint_t *l, listint_t *r);
+listint_t *get_tail(listint_t **list);
 
 #endif
