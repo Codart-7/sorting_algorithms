@@ -103,7 +103,7 @@ void cocktail_sort_list(listint_t **list)
 			tmp = node;
 			if (node->n > next->n)
 			{
-				swap_nodes(list, node, next);
+				swap(list, node, next);
 				swapped = TRUE;
 				print_list(*list);
 			}
