@@ -1,12 +1,12 @@
 #include "sort.h"
 
 /**
- * swap_nodes - Swaps two nodes in a doubly linked list.
+ * swap - Swaps two nodes in a doubly linked list.
  * @list: A pointer to the head of the linked list.
  * @l: The left item to swap.
  * @r: The right item to swap.
  */
-void swap_nodes(listint_t **list, listint_t *l, listint_t *r)
+void swap(listint_t **list, listint_t *l, listint_t *r)
 {
 	listint_t *tmp0 = NULL, *tmp1 = NULL, *tmp2 = NULL, *tmp3 = NULL;
 
@@ -87,7 +87,7 @@ void cocktail_sort_list(listint_t **list)
 			tmp = next;
 			if (node->n > next->n)
 			{
-				swap_nodes(list, node, next);
+				swap(list, node, next);
 				swapped = TRUE;
 				print_list(*list);
 			}
