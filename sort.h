@@ -55,4 +55,6 @@ int get_max(int *array, int size);
 void radix_counting_sort(int *array, size_t size, int sig, int *buff);
 void radix_sort(int *array, size_t size);
 
+void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
+
 #endif
